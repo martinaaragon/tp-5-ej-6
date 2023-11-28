@@ -11,12 +11,21 @@
         <header>
                 <nav class="navbar bg-black">
                         <div class="container-fluid">
-                          <a class="navbar-brand text-light" href="./index.html">Reloj digital</a>
+                          <a class="navbar-brand text-light" href="./index.html">Temporizador</a>
                         </div>
                       </nav>
         </header>
         <main>
-        
+                <article>
+                <div class="timer-container mt-5">
+                        <label for="timer-input">Tiempo (segundos):</label>
+                        <input type="number" id="timer-input" min="1" value="60">
+                        <button id="start-btn" onclick="startTimer()" class="btn btn-success">Iniciar</button>
+                        <button id="pause-btn" onclick="pauseTimer()" class="btn btn-warning">Pausar</button>
+                        <button id="reset-btn" onclick="resetTimer()" class="btn btn-danger">Reiniciar</button>
+                        <div id="timer-display">Tiempo restante: <span id="timer">60</span> segundos</div>
+                    </div>
+                </article>
         </main>
          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
         <script src="./js/ej-6.js"></script>

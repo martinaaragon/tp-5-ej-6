@@ -1,1 +1,19 @@
-
+body {
+        height: 100vh;
+        margin: 0;
+    }
+    
+    .timer-container {
+        text-align: center;
+    }
+    
+    #timer-display {
+        margin-top: 20px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    
+    #timer {
+        color: red;
+    }
+    
